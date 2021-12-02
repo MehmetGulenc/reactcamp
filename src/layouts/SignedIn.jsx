@@ -12,7 +12,7 @@ export default function SignedIn({ signOut }) {
         />
         <Dropdown pointing="top left" text="Mehmet">
           <Dropdown.Menu>
-            <Dropdown.Item text="Bilgiler" icon="info" />
+            <Dropdown.Item text="Bilgilerim" icon="info" />
             <Dropdown.Item onClick={signOut} text="Cikis Yap" icon="sign-out" />
           </Dropdown.Menu>
         </Dropdown>
