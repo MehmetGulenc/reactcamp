@@ -14,11 +14,12 @@ export default function ProductDashboard() {
             <Categories />
           </Grid.Column>
           <Grid.Column width={12}>
-            <Route exact path="/" component={ProductList} />
-            <Route exact path="/products" component={ProductList} />
-            <Route path="/products:id" component={ProductList} />
-            <Route path="/cart" component={CartDetail} />
-            <ProductList />
+            <Routes>
+              <Route exact path="/" component={ProductList} />
+              <Route exact path="/products" component={ProductList} />
+              <Route path="/products:id" component={ProductList} />
+              <Route path="/cart" component={CartDetail} />
+            </Routes>
           </Grid.Column>
         </Grid.Row>
       </Grid>
